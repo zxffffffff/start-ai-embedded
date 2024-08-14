@@ -19,7 +19,7 @@
 仓库: <https://github.com/open-webui/open-webui.git>
 
 ```bash
-# 引入
+# 引入子模块
 git submodule add -f https://github.com/open-webui/open-webui.git embedded/open-webui
 git submodule update --init --recursive
 
@@ -28,5 +28,22 @@ sh scripts/open-webui/build-mac.sh
 sh scripts/open-webui/run-mac.sh
 
 # 加入 pm2
-pm2 start scripts/open-webui/run-mac.sh --name open-webui
+pm2 start scripts/open-webui/run-mac.sh --name Ollama-WebUI
+```
+
+## ComfyUI
+
+仓库: <https://github.com/comfyanonymous/ComfyUI>
+
+```bash
+# 引入子模块
+git submodule add -f https://github.com/comfyanonymous/ComfyUI embedded/ComfyUI
+git submodule update --init --recursive
+
+# 编译运行
+sh scripts/ComfyUI/build-mac.sh
+sh scripts/ComfyUI/run-mac.sh
+
+# 加入 pm2
+pm2 start scripts/ComfyUI/run-mac.sh --name ComfyUI
 ```

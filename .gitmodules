@@ -1,3 +1,6 @@
 [submodule "embedded/open-webui"]
 	path = embedded/open-webui
 	url = https://github.com/open-webui/open-webui.git
+[submodule "embedded/ComfyUI"]
+	path = embedded/ComfyUI
+	url = https://github.com/comfyanonymous/ComfyUI
