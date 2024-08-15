@@ -17,8 +17,9 @@ cd ./backend
 
 # Optional: To install using Conda as your development environment, follow these instructions:
 # Create and activate a Conda environment
-conda create --name open-webui-env python=3.11
+conda create --name open-webui-env python=3.11 -y
 conda init zsh # 手动执行
+source ~/.zshrc
 conda activate open-webui-env
 
 # Install dependencies

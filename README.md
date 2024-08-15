@@ -28,7 +28,7 @@ sh scripts/open-webui/build-mac.sh
 sh scripts/open-webui/run-mac.sh
 
 # 加入 pm2
-pm2 start scripts/open-webui/run-mac.sh --name Ollama-WebUI
+pm2 start scripts/open-webui/run-mac.sh --name Ollama-WebUI-8080
 ```
 
 ## ComfyUI
@@ -45,5 +45,5 @@ sh scripts/ComfyUI/build-mac.sh
 sh scripts/ComfyUI/run-mac.sh
 
 # 加入 pm2
-pm2 start scripts/ComfyUI/run-mac.sh --name ComfyUI
+pm2 start scripts/ComfyUI/run-mac.sh --name ComfyUI-8188
 ```
