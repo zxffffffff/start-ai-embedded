@@ -1,3 +1,6 @@
+[submodule "embedded/ollama"]
+	path = embedded/ollama
+	url = https://github.com/ollama/ollama.git
 [submodule "embedded/open-webui"]
 	path = embedded/open-webui
 	url = https://github.com/open-webui/open-webui.git
