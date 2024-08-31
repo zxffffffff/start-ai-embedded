@@ -12,7 +12,7 @@
 
 仓库: <https://github.com/ollama/ollama.git>
 
-```bash
+```sh
 # 引入子模块
 git submodule add -f https://github.com/ollama/ollama.git embedded/ollama
 git submodule update --init --recursive
@@ -37,7 +37,7 @@ pm2 start scripts/ollama/run-mac.sh --name ollama-11434
 
 仓库: <https://github.com/open-webui/open-webui.git>
 
-```bash
+```sh
 # 引入子模块
 git submodule add -f https://github.com/open-webui/open-webui.git embedded/open-webui
 git submodule update --init --recursive
@@ -54,7 +54,7 @@ pm2 start scripts/open-webui/run-mac.sh --name Ollama-WebUI-8080
 
 仓库: <https://github.com/comfyanonymous/ComfyUI>
 
-```bash
+```sh
 # 引入子模块
 git submodule add -f https://github.com/comfyanonymous/ComfyUI embedded/ComfyUI
 git submodule update --init --recursive
@@ -65,4 +65,11 @@ sh scripts/ComfyUI/run-mac.sh
 
 # 加入 pm2
 pm2 start scripts/ComfyUI/run-mac.sh --name ComfyUI-8188
+```
+
+### 推荐使用 ComfyUI Manager
+
+```sh
+cd custom_nodes
+git clone https://github.com/ltdrdata/ComfyUI-Manager.git
 ```
