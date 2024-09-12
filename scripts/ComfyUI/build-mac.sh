@@ -8,11 +8,12 @@ cd ${repo_path}
 
 # 创建虚拟环境
 if [ ! -d "venv" ]; then
-    python -m venv ./venv
+    python3 -m venv ./venv
 fi
 source ./venv/bin/activate
 
 # 安装依赖
+which pip
 pip install -r requirements.txt
 
 ### 推荐使用 ComfyUI Manager

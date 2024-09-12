@@ -7,6 +7,7 @@ repo_path=$(realpath "${root_path}/../../embedded/${folder_name}")
 cd ${repo_path}
 
 # 设置两遍，所有场景都能覆盖到
+mkdir -p "${root_path}/../../models/${folder_name}"
 model_path=$(realpath "${root_path}/../../models/${folder_name}")
 
 launchctl setenv OLLAMA_HOST "0.0.0.0"
